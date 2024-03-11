@@ -29,6 +29,14 @@ class LoginPageState extends State<LoginPage> {
             fit: BoxFit.cover,
             color: Color.fromARGB(255, 163, 172, 164),
             colorBlendMode: BlendMode.darken,
+          ),
+          new Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              new FlutterLogo(
+                size: 80,
+              )
+            ],
           )
         ],
       ),
