@@ -26,34 +26,85 @@ class _MyloginState extends State<Mylogin> {
                 style: TextStyle(color: Colors.black87, fontSize: 34),
               ),
             ),
-            Container(
-              padding: EdgeInsets.only(
-                  top: MediaQuery.of(context).size.height * 0.5,
-                  right: 40,
-                  left: 40),
-              child: Column(
-                children: [
-                  TextField(
-                    decoration: InputDecoration(
-                        fillColor: Colors.white,
-                        filled: true,
-                        hintText: 'Email',
-                        border: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(15))),
-                  ),
-                  SizedBox(
-                    height: 40,
-                  ),
-                  TextField(
-                    obscureText: true,
-                    decoration: InputDecoration(
-                        fillColor: Colors.white,
-                        filled: true,
-                        hintText: 'Password',
-                        border: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(15))),
-                  ),
-                ],
+            SingleChildScrollView(
+              child: Container(
+                padding: EdgeInsets.only(
+                    top: MediaQuery.of(context).size.height * 0.5,
+                    right: 40,
+                    left: 40),
+                child: Column(
+                  children: [
+                    TextField(
+                      decoration: InputDecoration(
+                          fillColor: Colors.white,
+                          filled: true,
+                          hintText: 'Email',
+                          border: OutlineInputBorder(
+                              borderRadius: BorderRadius.circular(15))),
+                    ),
+                    SizedBox(
+                      height: 40,
+                    ),
+                    TextField(
+                      obscureText: true,
+                      decoration: InputDecoration(
+                          fillColor: Colors.white,
+                          filled: true,
+                          hintText: 'Password',
+                          border: OutlineInputBorder(
+                              borderRadius: BorderRadius.circular(15))),
+                    ),
+                    SizedBox(
+                      height: 40,
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Text(
+                          'Sign In',
+                          style: TextStyle(
+                              color: Color(0xff4c505b),
+                              fontSize: 30,
+                              fontWeight: FontWeight.w500),
+                        ),
+                        CircleAvatar(
+                          radius: 35,
+                          backgroundColor: Color(0xff4c505b),
+                          child: IconButton(
+                            onPressed: () {},
+                            icon: Icon(Icons.keyboard_arrow_right),
+                          ),
+                        ),
+                      ],
+                    ),
+                    SizedBox(
+                      height: 30,
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        TextButton(
+                            onPressed: () {},
+                            child: Text(
+                              'Sign Up',
+                              style: TextStyle(
+                                  decoration: TextDecoration.underline,
+                                  fontSize: 20,
+                                  color: Colors.black87),
+                            )),
+                        TextButton(
+                            onPressed: () {},
+                            child: Text(
+                              'Forgot Password',
+                              style: TextStyle(
+                                  decoration: TextDecoration.underline,
+                                  fontSize: 20,
+                                  color: Colors.black87),
+                            ))
+                      ],
+                    )
+                  ],
+                ),
               ),
             )
           ],
