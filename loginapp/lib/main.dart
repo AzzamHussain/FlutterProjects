@@ -7,7 +7,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return new MaterialApp(
         home: new LoginPage(),
-        theme: new ThemeData(primarySwatch: Colors.blue));
+        theme: new ThemeData(primarySwatch: Colors.brown));
   }
 }
 
