@@ -83,7 +83,7 @@ class _HomeState extends State<Home> {
                     color: Colors.white,
                     boxShadow: const [
                       BoxShadow(
-                        color: Colors.grey,
+                        color: Colors.grey, //
                         offset: Offset(0.0, 0.0),
                         blurRadius: 10.0,
                         spreadRadius: 0.0,
@@ -94,8 +94,7 @@ class _HomeState extends State<Home> {
                   child: TextField(
                     controller: _todoController,
                     decoration: InputDecoration(
-                        hintText: 'Add a new todo item',
-                        border: InputBorder.none),
+                        hintText: 'Plan your day', border: InputBorder.none),
                   ),
                 ),
               ),
@@ -136,7 +135,9 @@ class _HomeState extends State<Home> {
 
   void _deleteToDoItem(String id) {
     setState(() {
-      todosList.removeWhere((item) => item.id == id);
+      todosList.removeWhere((item) =>
+          item.id ==
+          id); //jo id mainai class mai lithi uske through remove karwaraha
     });
   }
 
@@ -209,7 +210,7 @@ class _HomeState extends State<Home> {
           height: 40,
           width: 40,
           child: ClipRRect(
-            borderRadius: BorderRadius.circular(20),
+            //borderRadius: BorderRadius.circular(20),
             child: Image.asset('assets/50955.jpg'),
           ),
         ),
